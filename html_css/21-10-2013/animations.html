@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			#primo,#secondo,#terzo,#quarto{
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+			}
+			#primo:hover{
+				-webkit-transform: rotate(30deg);
+				-moz-transform: rotate(30deg);
+				-ms-transform: rotate(30deg);
+				-o-transform: rotate(30deg);
+				transform: rotate(30deg);
+			}
+			#secondo{
+				background-color: red;
+			}
+			#secondo:hover{
+				-webkit-transform: scale(2,1);
+				-moz-transform: scale(2,1);
+				-ms-transform: scale(2,1);
+				-o-transform: scale(2,1);
+				transform: scale(2,1);
+			}
+			#terzo{
+				background-color: green;
+			}
+			#terzo{
+				-webkit-transform: translate(10px,20px);
+				-moz-transform: translate(10px,20px);
+				-ms-transform: translate(10px,20px);
+				-o-transform: translate(10px,20px);
+				transform: translate(10px,20px);
+			}
+			#quarto{
+				background-color: deepskyblue;
+			}
+			#quarto{
+				-webkit-transform: skew(10deg,15deg);
+				-moz-transform: skew(10deg,15deg);
+				-ms-transform: skew(10deg,15deg);
+				-o-transform: skew(10deg,15deg);
+				transform: skew(10deg,15deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="primo"></div>
+		<div id="secondo"></div>
+		<div id="terzo"></div>
+		<div id="quarto"></div>
+	</body>
+</html>

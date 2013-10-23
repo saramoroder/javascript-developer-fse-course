@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>ship</title>
+		<style type="text/css">
+			table{
+				table-layout: fixed;
+			}
+			td,th{
+				height: 5em;
+				width: 5em;
+				border:1px solid #C8C8C8;
+			}
+			.ship-horiz{
+				background: url('img/righe.png') no-repeat top center;
+				background-size: 4%;			
+			}
+			.ship-horiz:hover{
+				background-image:url('img/ship.jpg');
+				background-size:cover;
+			}
+			.ship-vert{
+				background: url('img/righe-horiz.png') no-repeat center left;
+				background-size: 125%;			
+			}
+			.ship-vert:hover{
+				background-image:url('img/ship-vert.jpg');
+				background-size:cover;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td></td>
+				<th>A</th>
+				<th>B</th>
+				<th>C</th>
+				<th>D</th>
+			</tr>
+			<tr>
+				<th>1</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ship-vert" rowspan="2"></td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td class="ship-horiz" colspan="2"></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>

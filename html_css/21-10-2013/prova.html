@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			div{
+				height:50px;
+				width: 100px;
+				float:left;
+				background-color: red;
+				margin:20px 30px;
+				border: 1px solid black;
+
+				-webkit-transition: -webkit-transform 2s, border-radius 2s;
+				-moz-transition: transform 2s, border-radius 2s;
+				-ms-transition: transform 2s, border-radius 2s;
+				-o-transition: transform 2s, border-radius 2s;
+				transition: transform 2s, border-radius 2s;
+			}
+			div:nth-child(2){background-color: green;}
+			div:nth-child(3){background-color: yellow;}
+			div:nth-child(4){background-color: orange;}
+			div:nth-child(5){background-color: deepskyblue;}
+
+			div:hover{
+				border-radius: 10px;
+
+				-webkit-transform: scale(1.5) rotate(15deg);
+				-moz-transform: scale(1.5) rotate(15deg);
+				-ms-transform: scale(1.5) rotate(15deg);
+				-o-transform: scale(1.5) rotate(15deg);
+				transform: scale(1.5) rotate(15deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+</html>

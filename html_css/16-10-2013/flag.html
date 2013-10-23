@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			svg{
+				border:1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<svg height="200" width="300" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="50%" cy="50%" r="25%" fill="red"/>
+		</svg>
+		<svg height="200" width="300" xmlns="http://www.w3.org/2000/svg" style="background-color:white;">
+			<rect width="33.333%" height="100%" x="0" y="0" fill="#01B700" />
+			<rect width="33%" height="100%" x="66.666%" y="0" fill="#D21C18" />
+		</svg>
+		<br/>
+		<svg height="400" width="600" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="50" cy="50%" r="50" fill="red">
+				<animate attributeType="XML" attributeName="cx" from="50" to="200" dur="200ms" begin="0s" fill="freeze" />
+				<animate attributeType="XML" attributeName="cy" from="200" to="50" dur="200ms" begin="200ms" fill="freeze" />
+				<animate attributeType="XML" attributeName="cy" from="50" to="250" dur="1000ms" begin="400ms" fill="freeze" />
+				<animate attributeType="XML" attributeName="cx" from="200" to="500" dur="500ms" begin="1400ms" fill="freeze" />
+				<animate attributeType="XML" attributeName="cy" from="250" to="50" dur="500ms" begin="1900ms" fill="freeze" />
+				<animate attributeType="XML" attributeName="cx" from="500" to="50" dur="500ms" begin="1900ms" fill="freeze" />
+
+				<animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="2s" repeatCount="indefinite"/>
+				<animate attributeType="XML" attributeName="fill" from="red" to="blue" dur="5s" repeatCount="indefinite"/>
+				<animate attributeType="XML" attributeName="r" from="50" to="150" dur="5s" repeatCount="indefinite"/>
+			</circle>
+		</svg>
+		<br/>
+		<svg height="200" width="300" xmlns="http://www.w3.org/2000/svg" style="background-color:white;">
+			<polygon points="0,150,140,150,140,0,145,0,190,20,145,40,145,150,300,150,300,200,0,200,0,150" stroke-width="2" stroke="black"/>
+		</svg>
+		<svg height="200" width="300" xmlns="http://www.w3.org/2000/svg" style="background-color:white;">
+			<rect width="100%" height="50" x="0%" y="150"/>
+			<line x1="50%" y1="0" x2="50%" y2="150" stroke-width="8" stroke="black"/>
+			<polygon points="150,0,190,20,150,40" style="background-color:black;" stroke-width="7" stroke="black"/>
+		</svg>
+	</body>
+</html>

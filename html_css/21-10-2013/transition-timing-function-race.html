@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				padding:20px 10px;
+				margin:10px;
+				background-color: blue;
+				-webkit-transition: width 2s;
+				-moz-transition: width 2s;
+				-ms-transition: width 2s;
+				-o-transition: width 2s;
+				transition: width 2s;
+			}
+			body:hover div{
+				width: 100%;
+			}
+			.linear{
+				-webkit-transition-timing-function: linear;
+				-moz-transition-timing-function: linear;
+				-ms-transition-timing-function: linear;
+				-o-transition-timing-function: linear;
+				transition-timing-function: linear;
+			}
+			.ease{
+				-webkit-transition-timing-function: ease;
+				-moz-transition-timing-function: ease;
+				-ms-transition-timing-function: ease;
+				-o-transition-timing-function: ease;
+				transition-timing-function: ease;
+			}
+			.ease-in{
+				-webkit-transition-timing-function: ease-in;
+				-moz-transition-timing-function: ease-in;
+				-ms-transition-timing-function: ease-in;
+				-o-transition-timing-function: ease-in;
+				transition-timing-function: ease-in;
+			}
+			.ease-out{
+				-webkit-transition-timing-function: ease-out;
+				-moz-transition-timing-function: ease-out;
+				-ms-transition-timing-function: ease-out;
+				-o-transition-timing-function: ease-out;
+				transition-timing-function: ease-out;
+			}
+			.ease-in-out{
+				-webkit-transition-timing-function: ease-in-out;
+				-moz-transition-timing-function: ease-in-out;
+				-ms-transition-timing-function: ease-in-out;
+				-o-transition-timing-function: ease-in-out;
+				transition-timing-function: ease-in-out;
+			}
+			.cubic-bezier{
+				-webkit-transition-timing-function: cubic-bezier(.17,.67,.64,.31);
+				-moz-transition-timing-function: cubic-bezier(.17,.67,.64,.31);
+				-ms-transition-timing-function: cubic-bezier(.17,.67,.64,.31);
+				-o-transition-timing-function: cubic-bezier(.17,.67,.64,.31);
+				transition-timing-function: cubic-bezier(.17,.67,.64,.31);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="linear">linear</div>
+		<div class="ease">ease</div>
+		<div class="ease-in">ease-in</div>
+		<div class="ease-out">ease-out</div>
+		<div class="ease-in-out">ease-in-out</div>
+		<div class="cubic-bezier">cubic-bezier</div>
+	</body>
+</html>

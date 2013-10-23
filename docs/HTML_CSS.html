@@ -1,0 +1,888 @@
+<html><meta charset="UTF-8"><style>html { 
+    font-size: 100%; 
+    overflow-y: scroll; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+}
+
+body{
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    color: #333;
+    background-color: #fff;
+    border-color: #999999;
+    border-width: 2px;
+    line-height: 1.5;
+    margin: 2em 3em;
+    text-align:left;
+    padding: 0 100px 0 100px;
+}
+
+pre{
+    background-color: #eee;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: auto;
+}
+code{
+    background-color: #eee;
+    padding: 1px 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; 
+}
+pre code {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+li p{
+    margin: 0.3em;
+}
+ul > li{
+    list-style-type: disc;
+}
+a:link, a:visited{
+    color: #33e;
+    text-decoration: none;
+}
+a:hover{
+    color: #00f;
+    text-shadow:1px 1px 2px #ccf;
+    text-decoration:underline;
+}
+h1{
+    color: #999;
+    font-weight: 400;
+    font-size: 36px;
+}
+h2{
+    border-bottom: 1px dotted #aaa;
+    margin-bottom: 1em;
+    color: #333;
+    font-size: 30px;
+}
+h3{
+    color: #666;
+    font-size: 24px;
+}
+h4 {
+    font-size: 21px;
+}
+h5 {
+    font-size: 18px;
+}
+.shadow{
+    -webkit-box-shadow:0 5px 15px #000;
+    -moz-box-shadow:0 5px 15px #000;
+    box-shadow:0 5px 15px #000;     
+}
+</style><body><h1>HTML and CSS</h1>
+<p>HTML for semantics</p>
+<p>CSS for styles</p>
+<p>JS for interaction</p>
+<p>HTTP (GET,POST,PUT,DELETE)</p>
+<p>PHP language side programming language for the web</p>
+<ul>
+<li>apache2 server web</li>
+<li>libapache2-mod-php5</li>
+<li>php5 interprete PHP</li>
+<li>php5-mysql</li>
+<li>mysql-server</li>
+<li>phpmyadmin o mysql-client</li>
+</ul>
+<h2>HTML</h2>
+<p>sgml, basic language</p>
+<p>tree structure</p>
+<p>tags for semantics (SEO)</p>
+<p>doctype defines the document type </p>
+<pre><code>&lt;!DOCTYPE
+</code></pre>
+<p>contains the document type definisce (dtd)</p>
+<p>strict mode</p>
+<p>transitional mode</p>
+<p>frameset mode</p>
+<p>important for bots,seo</p>
+<pre><code>&lt;nametag attribute="value"&gt;
+    content
+&lt;/nametag&gt;
+</code></pre>
+<p>structure and content</p>
+<p>void tags, like img are closed with / before &gt;</p>
+<p>tags inside head are interpreted, inside body are displayed</p>
+<p>meta are closed with / before &gt; because they are void tags</p>
+<pre><code>&lt;meta name="author" content="Christian Fei" /&gt;
+&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"/&gt;
+&lt;meta http-equiv="content-language" content="it"/&gt;
+&lt;meta name="description" content="descrrizione pertinente della pagina"/&gt;
+&lt;meta name="copyright" content="Christian Fei 2013"/&gt;
+&lt;meta http-equiv="refresh" content="5; http://www.google.com"/&gt;
+&lt;meta name="robots" content="index,follow"/&gt;
+&lt;meta charset="utf-8"/&gt;
+</code></pre>
+<p>in html5</p>
+<p>html entities</p>
+<p>represents the html character literally, start with &amp;</p>
+<pre><code>&amp;egrave;
+</code></pre>
+<p>&egrave;</p>
+<pre><code>&amp;lt; &amp;gt;
+</code></pre>
+<p>&lt; &gt;</p>
+<p>There are different types of tags</p>
+<p>-block have dimensions, follow the box-model, have a break line afterwards
+-inline </p>
+<h4>block elements</h4>
+<p>p, h1-h6, blockquote,address,pre,div</p>
+<p>div: general block element, used to define the structure of the page</p>
+<h4>inline elements</h4>
+<p>get displayed on the same line</p>
+<p>aim: identify differnet pieces of text with different meanings</p>
+<p>e.g.:acronym,abbr,cite,code,q,dfn,q,span</p>
+<p>span:the most generic inline element</p>
+<h4>Attributes</h4>
+<p>generic attributes:title,style,id,class</p>
+<hr />
+<h5>three steps</h5>
+<ol>
+<li>structure</li>
+<li>content</li>
+<li>presentation</li>
+</ol>
+<h2>CSS</h2>
+<pre><code>selector {
+    property:value;
+}
+</code></pre>
+<h3>units</h3>
+<ul>
+<li>px</li>
+<li>%</li>
+<li>em,rem</li>
+<li>cm</li>
+<li>pt</li>
+</ul>
+<p>Cascading stylesheets..
+only the last definition of the cascade will take effect on the element</p>
+<p>properties are overridden if they are more specific</p>
+<h1>08/10/2013</h1>
+<h2>stylesheets</h2>
+<p>Three methods</p>
+<ul>
+<li>external</li>
+<li>embedded</li>
+<li>inline</li>
+</ul>
+<h4>embedded</h4>
+<pre><code>&lt;style type="text/css"&gt;
+    p{
+        font-weight: bold;
+    }
+&lt;/style&gt;
+</code></pre>
+<h4>inline</h4>
+<pre><code>&lt;p style="font-weight:bold"&gt;
+    text
+&lt;/p&gt;
+</code></pre>
+<p>this is more specific</p>
+<p><a href="http://css-tricks.com/specifics-on-css-specificity/">read this</a></p>
+<h4>external</h4>
+<pre><code>&lt;link rel="stylesheet" href="http://google.com/style.css" type="text/css" /&gt;
+</code></pre>
+<h3>Order</h3>
+<ol>
+<li>external</li>
+<li>embedded</li>
+<li>inline</li>
+</ol>
+<h3>Print stylesheets</h3>
+<pre><code>&lt;link rel="stylesheet" type="text/css" media="print" href="print.css"&gt;
+</code></pre>
+<h3>rulez</h3>
+<pre><code>text-align:left|right|center|justify;
+</code></pre>
+<p>is applied to block elements, result:
+inline elements inside are aligned accordingly.</p>
+<p><em>shorthand property</em></p>
+<pre><code>background: #ccc url('img/m.jpg') no-repeat center right fixed;
+</code></pre>
+<p>background-size is CSS3, don't use it in the shorthand because old browsers could interpret the whole property as invalid</p>
+<h3>pseudo-classes</h3>
+<pre><code>a:link{}
+a:visited{}
+a:hover{}
+a:active{}
+/*in this ordero ordine. LoVe HAte*/
+
+a:first-letter
+div:first-child
+</code></pre>
+<h2>images</h2>
+<h4>non-vector</h4>
+<ul>
+<li>jpg</li>
+<li>gif</li>
+<li>png (high quality, handles transparency)</li>
+</ul>
+<h4>raster type images</h4>
+<p>can be optimized pixel per pixel (jpg,png)
+IE6 +/- has problemes with PNG</p>
+<p>attribute width and height are deprecatated</p>
+<h4>vertical align</h4>
+<p>can be applied to inline elements
+top,bottom,middle,super,sub,text-top,text-bottom</p>
+<h4>line-height</h4>
+<p>useful to create button with centred text(see padding too)</p>
+<h3>box model</h3>
+<p><img alt="box-model" src="http://screencloud.net/img/screenshots/74e10063dfbec7d00642079c63087f82.png" /></p>
+<p>block elements follow this spec</p>
+<p><strong>width<strong><em>,*height</em></strong>,*border</strong></p>
+<p><strong>width</strong> is default 100% relatively to its parent</p>
+<p><strong>padding</strong> is the distance between content and border</p>
+<p><strong>border</strong></p>
+<p><strong>outline</strong> acts like a second border</p>
+<p><strong>margin</strong> creates a space between the element and its container</p>
+<p><strong>width</strong> and <strong>height</strong> define the dimensions of the content</p>
+<h1>Positioning</h1>
+<pre><code>position:static|relative|absolute|fixed; /*static is default*/
+</code></pre>
+<p>Can be applied to block elements.</p>
+<p>when a parent element has a defined height, its child elements are displayed in a layer above and overflow the layer afterwards</p>
+<p>remains in the document flow</p>
+<h2>relative</h2>
+<p>the element is relative to its parent container.</p>
+<p>the element is displayed on an own layer but acts like a static element (the dimensions and position are the same as an static element)</p>
+<p>new CSS properties are now available (top left, etc)</p>
+<p>Use case: banners</p>
+<h2>absolute</h2>
+<p>we brake the element away from the normal document flow (static)</p>
+<p>the base structure don't know that the element exists because it's on an own layer</p>
+<p>doesn't get displayed until there isn't another parent element with a position different to static</p>
+<h2>fixed</h2>
+<p>Position elements relative to the browser window. When the window scrolls, the element stays at the same position.</p>
+<h3>z-index</h3>
+<p>defines the layer level of an element</p>
+<h3>float</h3>
+<p>cancels out the block element properties and places elements in a specific position (left,right)</p>
+<p>Are taken away from the regular document flow!</p>
+<p>The order in which elements are floated is important!</p>
+<p>Beware of collapsing parents!</p>
+<p><img alt="float" src="http://screencloud.net/img/screenshots/39fbc89d55d994e1e2416545fca79f35.png" /></p>
+<p>fills out also the vertical gaps</p>
+<h4>clear</h4>
+<p>The clear property cancels out the flow of floated elements. (right,left,both)</p>
+<h2>display</h2>
+<p>with display we can inherit properties of other element tipes (block, inline,inline-block,none,table,etc.)</p>
+<h4>block</h4>
+<p>e.g.: <code>a {display:block;}</code> enables links (inline elements) to have dimensions and follow the box-model (padding, height, margin,etc)</p>
+<h4>inline-block</h4>
+<p>With <code>inline-block</code>  we can inherit the properties of inline elements with dimensions (like images, svg, etc)</p>
+<h4>inline</h4>
+<p>The <code>inline</code> property is rendered depending on its content (wrap-content), in other words the elements has the dimensions of the text inside of it. </p>
+<h4>none</h4>
+<p>take the element out of the structure, the element doesn't affect elements nearby</p>
+<h2>lists</h2>
+<pre><code>list-style-type: circle|square|none|etc.
+list-style-position:inside|outside;
+</code></pre>
+<p><code>ul</code> e <code>ol</code> (unordered e ordered list, same properties, one is dotted the other is numbered</p>
+<p><code>li</code> (list items)</p>
+<p><code>dl</code> description list</p>
+<p><code>dt</code> data title</p>
+<p><code>dd</code> data definition</p>
+<p><strong>outside</strong>
+<img alt="outside" src="http://screencloud.net/img/screenshots/24c26d710a6799596a4ab3ef5e921aaa.png" /></p>
+<p><strong>inside</strong>
+<img alt="inside" src="http://screencloud.net/img/screenshots/6c14a321cf02c65faa195575adc77461.png" /></p>
+<h3>nested lists</h3>
+<h4>css</h4>
+<pre><code>li ul{
+    display: none;
+}
+li:hover &gt; ul{
+    display:block;
+}
+</code></pre>
+<h4>html</h4>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;menu1&lt;/li&gt;
+    &lt;li&gt;menu2&lt;/li&gt;
+    &lt;li&gt;menu3
+        &lt;ul&gt;
+            &lt;li&gt;submenu3.1&lt;/li&gt;
+            &lt;li&gt;submenu3.2
+                &lt;ul&gt;
+                    &lt;li&gt;subsubmenu3.2.1&lt;/li&gt;
+                    &lt;li&gt;subsubmenu3.2.2&lt;/li&gt;
+                    &lt;li&gt;subsubmenu3.2.3
+                        &lt;ul&gt;
+                            &lt;li&gt;subsubsubmenu3.2.3.1&lt;/li&gt;
+                            &lt;li&gt;subsubsubmenu3.2.3.2&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h2>visibility</h2>
+<p>visually hides the element but retains the static dimension it has in the document flow</p>
+<h2>tables</h2>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt; //table row
+        &lt;th&gt; //table heading
+        &lt;td&gt; //table cell
+</code></pre>
+<p>only border is supported in <a href="http://www.w3schools.com/tags/tag_table.asp">HTML5</a> other attributes are deprecated</p>
+<pre><code>table,th,td{
+    border:1px solid black;
+}
+</code></pre>
+<p>has the same effect as</p>
+<pre><code>&lt;table border="1"&gt;
+</code></pre>
+<h4>border-collapse</h4>
+<p>applied to table
+    border-collapse: collapse|separate;</p>
+<h4>border-spacing</h4>
+<p>applied to table</p>
+<pre><code>border-spacing:10px 5px; //horizontal and vertical spacing
+</code></pre>
+<h4>empty-cells</h4>
+<pre><code>empty-cells: hide|show;
+</code></pre>
+<h4>colspan|rowspan</h4>
+<pre><code>&lt;tr&gt;
+    &lt;th&gt;heading 1&lt;/th&gt;
+    &lt;th&gt;heading 2&lt;/th&gt;
+    &lt;th&gt;heading 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td colspan="2"&gt;cell2&lt;/td&gt;
+    &lt;td&gt;cell3&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+<p>give a title to a table with</p>
+<pre><code>&lt;caption&gt;title&lt;/caption&gt;
+</code></pre>
+<p>you can specify the position of the caption with</p>
+<pre><code>caption-side: bottom|top;
+</code></pre>
+<p>Give finer grained structure to your table with</p>
+<pre><code>&lt;thead&gt;
+&lt;tbody&gt;
+&lt;tfoot&gt;
+</code></pre>
+<p><strong>warning</strong> normally the HTML interpreter automatically adds a tbody around the content of a table elements (good to know for DOM navigation)</p>
+<h5>example</h5>
+<pre><code>&lt;table&gt;
+    &lt;caption&gt;my table&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;heading 1&lt;/th&gt;
+        &lt;th&gt;heading 2&lt;/th&gt;
+        &lt;th&gt;heading 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt;cell1&lt;/td&gt;
+        &lt;td&gt;cell2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td rowspan="2"&gt;cell1&lt;/td&gt;
+        &lt;td&gt;cell2&lt;/td&gt;
+        &lt;td&gt;cell3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt;cell2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+<p>equals this</p>
+<p><img alt="table layout" src="http://screencloud.net/img/screenshots/61f43fe8c884ea270dcbba092532dd5f.png" /></p>
+<h4>table-layout</h4>
+<p>Defines the layout of the table: auto (default), fixed</p>
+<p>Works in conjunction with a specific width set to td and th.</p>
+<pre><code>table{
+    table-layout:fixed;
+}
+th,td{
+    width:100px;
+}
+</code></pre>
+<p>Doesn't work with non-breakable words, like (fdsfdsfdsfsfadsfdasfdsafsdafds)</p>
+<p><img alt="table with fixed width and layout fixed" src="http://screencloud.net/img/screenshots/6edd2fa65bd9a8ebff8c474efc9f6af7.png" /></p>
+<h4>semantics in tables</h4>
+<p>abbr attribute on td's</p>
+<p>summary attribute on table</p>
+<h4>colgroup</h4>
+<p>colgroup is used to apply styles to entire columns of a table</p>
+<pre><code>&lt;colgroup&gt;
+    &lt;col style="background-color:red"/&gt;
+    &lt;col style="background-color:blue"/&gt;
+    &lt;col style="background-color:yellow"/&gt;
+&lt;/colgroup&gt;
+</code></pre>
+<p>placed after caption and before thead,tbody</p>
+<hr />
+<p><em>hint</em></p>
+<p>to hide overflowing text with an ellipsis you need to do the following:</p>
+<pre><code>td,th{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+</code></pre>
+<h4>border-radius</h4>
+<p>pass horizontal and vertical radius.</p>
+<p>Via shorthand or each corner:</p>
+<pre><code>border-radius: 10px 5px;
+
+border-top-left-radius:50%;
+
+border-radius: 40px 30px 20px 10px / 40px 30px 20px 10px;
+</code></pre>
+<h2>form</h2>
+<p>Is the interface that connects a browser with a web server. A language capable to process the data sent from a form needs to be parsed on the server (PHP,Node,etc)</p>
+<p>Every information I want to send to the server needs to be inside <code>&lt;form&gt;</code></p>
+<h4>attributes</h4>
+<pre><code>&lt;form name="myform" id="myform" action="result.php" method="get"&gt;
+
+&lt;/form&gt;
+</code></pre>
+<p><code>name</code> identifies the form</p>
+<p><code>action</code> is the file/service that will handle my request (hopefully)</p>
+<p><code>method</code> is the method to transport the data, GET (sent through parameters in the url), POST (sent 'anonymously')</p>
+<h2>input</h2>
+<p>attribute <code>type</code> defines the type of the input: text, password, submit, etc.</p>
+<p><code>name</code> attribute is used to identify data on the server side</p>
+<p>The name attribute gets interesting when used with radio buttons</p>
+<pre><code>&lt;input type="radio" id="M" name="sex" value="M"&gt; M
+&lt;input type="radio" id="F" name="sex" value="F"&gt; F
+</code></pre>
+<p>In this case the browser understands that only one option can be selected thanks to the same name attribute of both input[type="radio"]</p>
+<p><strong>hint</strong> : the value attribute is needed in this case because we need to identify further which radio button has been selected</p>
+<h4>checkbox</h4>
+<pre><code>&lt;input type="checkbox" name="dog" id="dog"&gt;dog
+</code></pre>
+<p>additional attribute : <code>checked</code>, reccommended syntax</p>
+<pre><code>&lt;input type="checkbox" name="dog" id="dog" checked="checked"&gt;dog
+</code></pre>
+<h4>select</h4>
+<pre><code>&lt;select name="city" id="city"&gt;
+    &lt;option value="Bolzano"&gt;Bolzano&lt;/option&gt;
+    &lt;option value="Merano"&gt;Merano&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+<p>Where the value attribute of the option tags are the values sent through a HTTP request</p>
+<p>To send multiple choiches (hold down ctrl to select more)</p>
+<pre><code>&lt;select name="city[]" id=""&gt;
+    &lt;option value="Bolzano"&gt;Bolzano&lt;/option&gt;
+    &lt;option value="Merano"&gt;Merano&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+<h4>reset</h4>
+<p>Resets the form to its default state</p>
+<pre><code>&lt;input type="reset" value="reset"&gt;
+</code></pre>
+<h4>button</h4>
+<pre><code>&lt;input type="button"&gt;
+</code></pre>
+<h4>datalist</h4>
+<p>The <code>&lt;datalist&gt;</code> tag specifies a list of pre-defined options for an <code>&lt;input&gt;</code> element.</p>
+<p>The <code>&lt;datalist&gt;</code> tag is used to provide an "autocomplete" feature on <code>&lt;input&gt;</code> elements. Users will see a drop-down list of pre-defined options as they input data.</p>
+<p>Use the <code>&lt;input&gt;</code> element's list attribute to bind it together with a <code>&lt;datalist&gt;</code> element.</p>
+<pre><code>&lt;input list="browsers"&gt;
+
+&lt;datalist id="browsers"&gt;
+  &lt;option value="Internet Explorer"&gt;
+  &lt;option value="Firefox"&gt;
+  &lt;option value="Chrome"&gt;
+  &lt;option value="Opera"&gt;
+  &lt;option value="Safari"&gt;
+&lt;/datalist&gt;
+</code></pre>
+<h4>new attributes and tags in HTML5 forms</h4>
+<p><strong>beware</strong> partial support even in 'modern' browsers</p>
+<pre><code>&lt;input type="email"&gt;
+&lt;input type="url"&gt;
+&lt;input type="number" min="10" max="20"&gt;
+&lt;input type="range" min="10" max="20"/&gt;
+&lt;input type="date"&gt;
+&lt;input type="week"&gt;
+&lt;input type="month"&gt;
+</code></pre>
+<p>attribute <code>required</code> on form children, <code>novalidate</code> on form for debug purpose</p>
+<p><code>pattern</code> for client side validation (browser support)</p>
+<p><code>placeholder</code> text</p>
+<p><code>autofocus="autofocus"</code></p>
+<p>Input elements have indexes and you can navigate through them with tabulator. You can specify an order with the attribute <code>tabindex</code></p>
+<p><code>readonly</code> gets sent through forms</p>
+<p><code>disabled</code> doesn't</p>
+<hr />
+<pre><code>&lt;label for="link"&gt;&lt;/label&gt;
+&lt;input type="text" id="link" name="link"&gt;
+</code></pre>
+<p>for better usability</p>
+<hr />
+<pre><code>&lt;fieldset&gt;
+    &lt;legend&gt;title of the form&lt;/legend&gt;
+    &lt;form action=""&gt;
+        &lt;input type="text"&gt;
+    &lt;/form&gt;
+&lt;/fieldset&gt;
+</code></pre>
+<h4>new pseudo-classes</h4>
+<pre><code>input:valid,input:invalid{}
+</code></pre>
+<h4>pseudo-elementi</h4>
+<pre><code>:after, :before{}
+</code></pre>
+<h2>external resources</h2>
+<h4>object</h4>
+<p><code>object</code> and <code>embed</code></p>
+<p><code>object</code> has more support</p>
+<pre><code>&lt;object data="" type=""&gt;
+    &lt;embed src="" type=""&gt;
+&lt;/object&gt;
+</code></pre>
+<p>It's an inline element</p>
+<pre><code>&lt;object data="adb.pdf" type="application/pdf"&gt;
+    &lt;embed src="abc.pdf" type="application/pdf"/&gt;
+&lt;/object&gt;
+</code></pre>
+<p>elements inside <code>object</code> are used as a fallback</p>
+<pre><code>&lt;object data="adb.pdf" type="application/pdf"&gt;
+    alt &lt;a href="abc.pdf"&gt;test&lt;/a&gt;
+&lt;/object&gt;
+
+&lt;object data="adb.pdf" type="application/pdf"&gt;
+    &lt;embed src="abc.pdf" type="application/pdf"/&gt;
+&lt;/object&gt;
+</code></pre>
+<p>result are very different across browsers..</p>
+<h4>iframe</h4>
+<pre><code>&lt;iframe src="http://www.ethicalsoftware.it" frameborder="0"&gt;&lt;/iframe&gt;
+</code></pre>
+<p><code>sandbox</code> attribute allow to specify resource to load inside an iframe</p>
+<p>void <code>sandbox</code> attribute set these four allowed attributes:</p>
+<ul>
+<li>allow-same-origin</li>
+<li>allow-top-navigation</li>
+<li>allow-forms</li>
+<li>allow-scripts</li>
+</ul>
+<h4>video</h4>
+<p>attributes</p>
+<pre><code>controls
+autoplay
+</code></pre>
+<p>for better fallback use this technique</p>
+<pre><code>&lt;video controls="controls" height="240" width="320"&gt;
+    &lt;source src="movie.mp4" type="video/mp4"/&gt;
+    &lt;source src="movie.ogg" type="video/ogg"/&gt;
+    &lt;object width="320" height="240"&gt;
+        &lt;embed src="movie.swf" width="320" height="240"&gt;
+        &lt;/embed&gt;
+    &lt;/object&gt;
+&lt;/video&gt;
+</code></pre>
+<h4>audio</h4>
+<p>same as above</p>
+<h2>SVG</h2>
+<pre><code>&lt;svg height="200" width="200" xmlns="http://www.w3.org/2000/svg"&gt;
+
+&lt;/svg&gt;
+</code></pre>
+<p>Every geometric form of the SVG goes inside this tag.</p>
+<p>Not everything of an SVG can be styled via CSS, like rect for example</p>
+<pre><code>&lt;rect id="rectangle" width="50" height="50" fill="yellow" x="20" y="40"/&gt;
+
+&lt;circle cx="100" cy="100" r="50"/&gt;
+
+&lt;line x1="70" y1="40" x2="250" y2="100" stroke="black" stroke-width="2"/&gt;
+
+&lt;polygon points="50,10,200,50,100,50,50,150,150,200" fill="none" stroke="blue" stroke-width="2"/&gt;
+
+&lt;polyline points="300,150,250,75,150,80,50,175" stroke="black" stroke-width="2" fill="none"/&gt;
+</code></pre>
+<h4>minigolf</h4>
+<pre><code>&lt;svg height="200" width="300" xmlns="http://www.w3.org/2000/svg" style="background-color:white;"&gt;
+    &lt;polygon points="0,150,140,150,140,0,145,0,190,20,145,40,145,150,300,150,300,200,0,200,0,150" stroke-width="2" stroke="black"/&gt;
+&lt;/svg&gt;
+</code></pre>
+<p><img alt="minigolf" src="http://screencloud.net/img/screenshots/2c3f3493b8d17103cd95723f8082e599.png" /></p>
+<h4>animating SVG</h4>
+<p>void elements need become enclosing tags</p>
+<h2>HTML5 new structure elements</h2>
+<h4>section</h4>
+<p>The <code>&lt;section&gt;</code> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.</p>
+<h4>aside</h4>
+<p>The <code>&lt;aside&gt;</code> tag defines some content aside from the content it is placed in.</p>
+<p>The aside content should be related to the surrounding content.</p>
+<h4>article</h4>
+<p>The <code>&lt;article&gt;</code> tag specifies independent, self-contained content.</p>
+<p>An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.</p>
+<p>Potential sources for the <code>&lt;article&gt;</code> element:</p>
+<ul>
+<li>Forum post</li>
+<li>Blog post</li>
+<li>News story</li>
+<li>Comment</li>
+</ul>
+<h4>figure</h4>
+<p>Identifies a surrounding box around an image. In conjunction with figcaption bots can understand and index the site content better (SEO)</p>
+<h5>figcaption</h5>
+<p>Description of the image. Goes inside the figure element</p>
+<pre><code>&lt;figure&gt;
+    &lt;img src="bb.jpg" alt="brooklyn bridge"&gt;
+    &lt;figcaption&gt;brooklyn bridge&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+<h4>mark</h4>
+<p>Highlights part of your text</p>
+<h4>meter</h4>
+<pre><code>&lt;meter min="0" max="100" value="75"&gt;&lt;/meter&gt;
+&lt;meter value="0.75"&gt;&lt;/meter&gt;
+</code></pre>
+<p>Example usage : <code>disk usage</code>.</p>
+<p>It's not meant for progress visualization: use <code>&lt;progress&gt;</code> instead.</p>
+<p><strong>These elements are not production ready, are cool, but it's not safe to use them</strong></p>
+<h2>new CSS3 properties</h2>
+<h4>box-shadow</h4>
+<p>Can be applied to containers (like inline-block,block,etc.)</p>
+<pre><code>box-shadow: 50px 50px 10px 20px deepskyblue;
+</code></pre>
+<h4>background-origin</h4>
+<p>Decide from where to let the background-image start (regarding the box-model)</p>
+<p>Three options</p>
+<pre><code>backgroud-origin: content-box| padding-box|border-box;
+</code></pre>
+<h2>Colums</h2>
+<pre><code>-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+</code></pre>
+<p>Creates a grid layout of the block element with 3 columns</p>
+<h4>column-gap</h4>
+<p>You can define a gap between each column</p>
+<pre><code>-webkit-column-gap: 41px;
+-moz-column-gap: 41px;
+column-gap: 41px;
+</code></pre>
+<h4>column-rule</h4>
+<p>Show a border between each column</p>
+<pre><code>-webkit-column-rule: 1px solid black;
+-moz-column-rule: 1px solid black;
+column-rule: 1px solid black;
+</code></pre>
+<h2>Vendor prefixes</h2>
+<p>Every browser can specify their own libraries etc., so you have to adapt and use vendor prefixes.</p>
+<p><a href="http://www.w3schools.com/cssref/css3_browsersupport.asp">CSS3 vendor prefixes</a></p>
+<h2>External fonts in CSS3</h2>
+<p>You can let the browser download a custom font for your website with CSS3</p>
+<pre><code>@font-face{
+    font-family: myfont; /*declare your custom font*/
+    src: url('fonts/black_r.ttf'),
+            url('fonts/black_r.eot') format('opentype');
+}
+
+body{
+    font-family: myfont; /*use your custom font*/
+}
+</code></pre>
+<h2>media queries</h2>
+<p><code>media</code> attribute in <code>&lt;link&gt;</code> to specify a stylesheet for a specific media type (screen,tv,projector,print,etc.)</p>
+<p>OR</p>
+<p><code>@media</code> in CSS3</p>
+<pre><code>@media screen{
+    div{
+        background-color: red;
+        font-family: Verdana;
+        font-family: 12px;
+    }
+}
+@media print{
+    div{
+        font-family: Arial;
+        font-family: 16px;
+    }
+}
+
+/*or*/
+@media screen,print{
+    div{
+        background-color: red;
+        font-family: Arial;
+        font-family: 16px;
+    }
+}
+</code></pre>
+<p><code>max-width</code> &amp; <code>min-width</code> queries = viewport (inner browser window) width</p>
+<p>You can define ranges</p>
+<pre><code>@media screen and (min-width:400px) and (max-width:800px){
+</code></pre>
+<h4>device metrics</h4>
+<p>With <code>max-device-width</code> and <code>min-device-width</code> you can create styles depending on the users screen</p>
+<hr />
+<p><code>orientation</code> : <code>portrait</code> | <code>landscape</code></p>
+<hr />
+<p>Target specific aspect ratios</p>
+<pre><code>min-aspect-ratio : 4/3
+max-aspect-ratio : 16/9
+</code></pre>
+<p>and</p>
+<pre><code>min-device-aspect-ratio : 4/3
+max-device-aspect-ratio : 16/9
+</code></pre>
+<hr />
+<h5>example</h5>
+<pre><code>&lt;link type="text/css" rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css"/&gt;
+&lt;link type="text/css" rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css"/&gt;
+&lt;style type="text/css"&gt;
+    *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    div{
+        float: left;
+        height: 200px;
+        background-color: red;
+        border:1px solid black;
+    }
+&lt;/style&gt;
+</code></pre>
+<h2>CSS selectors</h2>
+<h3>descendency selectors</h3>
+<pre><code>        html
+    /           \
+head            body
+            /           \
+        div.first   div.second
+        /   |   \   /   |   \
+        a   a   a   a   a   a
+
+div.first a { /*descendecy selector*/
+    color: #123456;
+}
+div.second a { /*descendecy selector*/
+    color: #654321;
+}
+</code></pre>
+<h3>child selector</h3>
+<p>direct child selector</p>
+<pre><code>div &gt; div{
+    color:#facaca;
+}
+</code></pre>
+<p>it is more specific than the descendecy selector</p>
+<h3>first child</h3>
+<p>targets the first child, independently to the elements selector</p>
+<pre><code>body &gt; *:first-child{
+    color:cacca;
+}
+</code></pre>
+<h3>Adjacent sibling selector</h3>
+<p>HTML</p>
+<pre><code>&lt;div&gt;
+    &lt;p&gt;1&lt;/p&gt;
+    &lt;p&gt;2&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;p&gt;3&lt;/p&gt;
+    &lt;p&gt;4&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;div&gt;5&lt;/div&gt;
+    &lt;p&gt;this will be coloured red&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>CSS</p>
+<pre><code>div + p{
+    color: red;
+}
+</code></pre>
+<h3>Attribute selector</h3>
+<p>HTML</p>
+<pre><code>&lt;div title="test"&gt;
+    color red;
+&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+</code></pre>
+<p>CSS</p>
+<pre><code>/*targets all divs with title attribute set(also empty)*/
+div[title]{
+    color:red;
+}
+</code></pre>
+<h4>regex like attribute selectors</h4>
+<h5>exact match</h5>
+<pre><code>div[title="test"]{}
+</code></pre>
+<h5>contains (exact match)</h5>
+<pre><code>div[title~="test"]{}
+</code></pre>
+<p>This selects elements which have <code>test</code>  inside their title attribute, but whitespace is important (will match <code>test</code> but not <code>teststring</code> or <code>test-string</code>) </p>
+<h4>contains (loose match)</h4>
+<pre><code>div[title*="test"]{}
+</code></pre>
+<p>Matches also the other cases above</p>
+<h5>starts with</h5>
+<pre><code>div[title^="test"]{}
+</code></pre>
+<h5>ends with</h5>
+<pre><code>div[title$="test"]{}
+</code></pre>
+<h4>lang selector</h4>
+<p>Not used very often...</p>
+<pre><code>div:lang(de){}
+</code></pre>
+<h3>child selectors</h3>
+<pre><code>p:first-child{}
+
+p:last-child{}
+
+p:only-child{}
+
+/*targets every p that is a direct child and happens to be second in the tree*/
+div &gt; p:nth-child(2){}
+
+/*targets elements in the reverse order following the same principle as nth-child*/
+div &gt; p:nth-last-child(2){}
+</code></pre>
+<h3>empty selector</h3>
+<pre><code>div:empty{}
+</code></pre>
+<p>targets <strong>empty</strong> elements</p>
+<pre><code>&lt;div&gt;&lt;/div&gt; &lt;!--is targeted--&gt;
+&lt;div&gt;  &lt;/div&gt; &lt;!--is NOT targeted--&gt;
+</code></pre>
+<h3>:not selector</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:not?redirectlocale=en-US&amp;redirectslug=CSS%2F%3Anot">check the reference</a></p>
+<h2>CSS transforms</h2>
+<p>all these properties remain in the document flow (static), only the presentation layer is modified.</p>
+<pre><code>transform: rotate(30deg);
+transform: scale(2,4); /*scale 2x hor, 4x vert*/
+transform: translate(50px,100px);
+transform: skew(10deg,20deg);
+</code></pre>
+<h2>CSS transitions</h2>
+<p>You can specifiy which properties you would like to 'animate'/animate their transition</p>
+<p><strong>Warning</strong> Vendor prefixes!</p>
+<pre><code>.test{
+    -webkit-transition: -webkit-transform 2s, transform 2s, height 2s;
+    -moz-transition: -webkit-transform 2s, transform 2s, height 2s;
+    -ms-transition: -webkit-transform 2s, transform 2s, height 2s;
+    -o-transition: -webkit-transform 2s, transform 2s, height 2s;
+    transition: -webkit-transform 2s, transform 2s, height 2s;
+}
+.test:hover{
+    height: 300px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+</code></pre></body></html>

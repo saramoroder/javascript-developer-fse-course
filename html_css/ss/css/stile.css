@@ -1,0 +1,67 @@
+body{
+	background-image: url('../img/cielo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1{
+	background-image: url('../img/banner.jpg');
+	padding: 3em 1em;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+	h1 a {
+		color:white;
+	}
+section{
+	margin:50px auto;
+}
+.pianeti img{
+	vertical-align: top;
+}
+.pianeti img:hover{
+	width:5em;/*per sovrascrivere le regole del più specifico id*/
+}
+/*deve essere più specifico (section)*/
+.pianeti img.sole:hover{
+	width: 25em;
+}
+
+	.sole{width: 300px;}
+	.mercurio{width: 49px;}
+	.venere{width: 89px;}
+	.terra{width: 64px;}
+	.luna{width: 25px;}
+	.marte{width: 39px;}
+	.giove{width: 94px;}
+	.saturno{width: 109px;}
+	.urano{width: 100px;}
+	.nettuno{width: 92px;}
+	.plutone{width: 24px;}
+
+	footer{
+		margin-top: 50px;
+		text-align: center;
+	}
+
+/*pos*/
+.pos {
+	position: relative;
+	height:500px;
+}
+	
+	.pos img{
+		position: absolute;
+	}
+	.pos .pos-sole img{left: 16px;top:5%;}
+	.pos .pos-mercurio img{left: 348px;top:14%;}
+	.pos .pos-venere img{left: 402px;top:27%;}
+	.pos .pos-terra img{left: 505px;top:13%;}
+	.pos .pos-luna img{left: 492px;top:10%;}
+	.pos .pos-marte img{left: 576px;top:22%;}
+	.pos .pos-giove img{left: 650px;top:20%;}
+	.pos .pos-saturno img{left: 737px;top:38%;}
+	.pos .pos-urano img{left: 803px;top:-11%;}
+	.pos .pos-nettuno img{left: 882px;top:22%;}
+	.pos .pos-plutone img{left: 972px;top:-14%;}

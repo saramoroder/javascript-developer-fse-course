@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>ship hack</title>
+		<style type="text/css">
+			table{
+				/*table-layout: fixed;*/
+			}
+			td,th{
+				height: 5em;
+				width: 5em;
+				border:1px solid transparent;
+			}
+			.ship-horiz:hover{
+				background-image:url('img/ship.jpg');
+				background-size:cover;
+				margin:10px;
+			}
+			.ship-vert:hover{
+				background-image:url('img/ship-vert.jpg');
+				background-size:cover;
+				margin:10px;
+			}
+			.outer{
+				position:relative;
+			}
+			.inner{
+				position: absolute;
+				top: 0;
+				left:0;
+				z-index: -1;
+			}
+			.inner td, .inner th{
+				border:1px solid #C8C8C8;
+			}
+		</style>
+	</head>
+	<body>
+		<table class="outer">
+			<tr>
+				<td></td>
+				<th>A</th>
+				<th>B</th>
+				<th>C</th>
+				<th>D</th>
+			</tr>
+			<tr>
+				<th>1</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ship-vert" rowspan="2"></td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td class="ship-horiz" colspan="2"></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<table class="inner">
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

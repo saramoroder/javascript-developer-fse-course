@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Document</title>
+		<link type="text/css" rel="stylesheet" href="ecommerce.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1><img src="http://christian-fei.com/favicon.ico" alt="logo" class="logo"/><a href="ecommerce.html">Sito ecommerce</a></h1>
+				<nav>
+					<ul class="menu">
+						<li>ABBIGLIAMENTO
+							<ul>
+								<li><a href="tshirt.html" title="compra tshirt">t-shirt</a></li>
+								<li>cappelli</li>
+								<li>inverno</li>
+								<li>estate</li>
+							</ul>
+						</li>
+						<li>CASALINGHI
+							<ul>
+								<li><a href="http://arredamento.shop.ebay.it/" target="iframeebay">arredamento</a></li>
+								<li>menu2</li>
+								<li>menu3</li>
+								<li>menu4</li>
+							</ul>
+						</li>
+						<li>ELETTRONICA
+							<ul>
+								<li><a href="pc.html" title="compra pc">PC</a></li>
+								<li>TELEFONI</li>
+								<li>menu3</li>
+								<li>menu4</li>
+							</ul>
+						</li>
+						<li>CUCINA
+							<ul>
+								<li>PADELLE</li>
+								<li>BO</li>
+								<li>menu3</li>
+								<li>menu4</li>
+							</ul>
+						</li>
+						<li>admin
+							<ul>
+								<li><a href="fatturato.html">fatturato</a></li>
+								<li><a href="prodotti.html">prodotti</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<form name="carrello" id="carrello" action="carrello.php" method="post" >
+					<div class="img-container">
+						<img src="http://images1.wikia.nocookie.net/__cb20130309192108/gtawiki/images/b/be/PC_2010s.jpg" alt="pc"/>
+					</div>
+					<div>
+						<h1>PC</h1>
+					</div>
+					<div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, maiores blanditiis dignissimos veritatis quibusdam ab nulla modi nam facilis velit? Atque, tenetur reiciendis laborum id porro nostrum fuga minima officia.
+						</p>
+					</div>
+					<div>
+						<label for="processore" class="required">processore</label>
+						<select name="processore" id="processore" required="required">
+							<option value="">&nbsp;</option>
+							<option value="intel">Intel</option>
+							<option value="amd">AMD</option>
+						</select>
+					</div>
+					<div>
+						<label for="schedagrafica" class="required">scheda grafica</label>
+						<select name="schedagrafica" id="schedagrafica" required="required">
+							<option value="">&nbsp;</option>
+							<option value="nvidia">Nvidia</option>
+							<option value="ati">Ati</option>
+						</select>
+					</div>
+					<div>
+						<label for="ram" class="required">RAM</label>
+						<select name="ram" id="ram" required="required">
+							<option value="">&nbsp;</option>
+							<option value="2">2 GB</option>
+							<option value="4">4 GB</option>
+						</select>
+					</div>
+					<div>
+						<div class="color-container">
+							<div class="color darkgrey">
+								<label for="color-darkgrey" class="big"></label><input type="radio" checked="checked" name="color" id="color-darkgrey" value="darkgrey">
+							</div>
+							<div class="color black">
+								<label for="color-black" class="big"></label><input type="radio" name="color" id="color-black" value="black">
+							</div>
+						</div>
+					</div>
+					<div class="full">
+						<input type="submit" id="submit" name="submit" value="Aggiungi al carrello">
+						<input type="reset" id="reset" name="reset" value="ripristina carello">
+					</div>
+				</form>
+			</section>
+		</div>
+	</body>
+</html>

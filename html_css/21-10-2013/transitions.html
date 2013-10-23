@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			#primo{
+				width: 200px;
+				height: 200px;
+				margin:100px;
+				background-color: blue;
+				-webkit-transition: -webkit-transform 2s, width 2s;
+				-moz-transition: -webkit-transform 2s, transform 2s, width 2s;
+				-ms-transition: -webkit-transform 2s, transform 2s, width 2s;
+				-o-transition: -webkit-transform 2s, transform 2s, width 2s;
+				transition: -webkit-transform 2s, transform 2s, width 2s;
+
+				-webkit-transition-timing-function: ease-out;
+				-moz-transition-timing-function: ease-out;
+				-ms-transition-timing-function: ease-out;
+				-o-transition-timing-function: ease-out;
+				transition-timing-function: ease-out;
+
+			}
+			#primo:hover{
+				width: 400px;
+				-webkit-transform: rotate(10deg);
+				-moz-transform: rotate(10deg);
+				-ms-transform: rotate(10deg);
+				-o-transform: rotate(10deg);
+				transform: rotate(10deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="primo"></div>
+	</body>
+</html>

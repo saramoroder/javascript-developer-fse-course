@@ -1,0 +1,74 @@
+@media screen and (max-width:650px) {
+	wrap {
+		width: 400px;
+		height:700px;
+		margin-bottom: 50px auto;
+	}
+}
+
+fieldset {
+    
+    width: 645px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #ededed;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.nome, .cognome, .datanascita, .imail, .messaggio, .accetto  {
+	height: 19px;
+	line-height: 19px;
+	width: 250px;
+/* 	border: 1px solid black; */
+	float:left;
+}
+
+
+#nome, #cognome, #datanascita, #imail, #messaggio, #accetto {
+	display: inline-block;
+	width:315px;
+	height: 13px;
+	/* background-color: white; */
+	float: left;
+}
+
+#messaggio{
+	margin-bottom: 20px;
+	letter-spacing: .05em;
+    font-size: .6em;
+    line-height: 120%
+    margin-right: 35px;
+}
+
+label {
+    letter-spacing: .02em;
+}
+
+p {
+    clear: both;
+    font-size: .689em;
+    width: 80%;
+    max-width: 300px;
+    letter-spacing: .05em;
+
+}
+
+#privacy {
+    display: block;
+    float: left;
+}
+
+.privacytext {
+	margin-left: 10px;
+	display: block;
+	float: left;
+    letter-spacing: .05em;
+    font-size: .6em;
+    font-weight: bold;
+}
+
+/* Media query per il modulo */
+
+

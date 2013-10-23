@@ -1,0 +1,41 @@
+body{
+	background-color:#FFD000;
+	color:blue;
+	font-size: 20px;
+}
+h1 span{
+	color:#5BF900;font-weight:bold
+}
+a:visited{
+	text-decoration: none;
+	color:white;
+}
+a:hover{
+	color:blue;
+	font-size: 2em;
+	text-decoration: none;
+}
+a:active{
+	color:green;
+}
+/*usato per seconda.html*/
+.bg{
+	background: url('../../img/m.jpg') no-repeat center center;
+	background-size:cover;
+}
+/*stile standard*/
+p{
+	background-color:#FF9909;/*arancione*/
+}
+/*sovrascrive la def precedente*/
+.secondo{
+	background-color:#FF0070;/*rosa*/
+}
+.terzo{
+	background-color:#048EF2;/*celeste*/
+}
+	abbr{
+		color:#74F400;/*verde veleno*/
+		font-style: italic;
+		font-weight: bold;
+	}

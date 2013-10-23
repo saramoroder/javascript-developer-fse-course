@@ -1,0 +1,90 @@
+@font-face{
+	font-family: myfont;
+	src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf');
+}
+body{
+	font-family: myfont;
+}
+h1{
+	font-size: 2.5em;
+}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.container{
+	margin:auto;
+	max-width: 700px;
+}	
+	.clearfix:before,.clearfix:after{content: " ";display: table;}.clearfix:after {clear: both;}/* For IE 6/7 only */.clearfix {*zoom: 1;}
+
+	header{
+		padding: 1.5em 0;
+		background-color: #4C4C4C;
+		/*overflow:hidden;*/
+	}
+		nav{
+			color:white;
+			margin:auto;
+		}
+			nav ul{
+				list-style-type: none;
+				margin-top:0;
+				text-align: center;
+				padding: 0;
+				margin:0 auto;
+			}
+	aside,article,footer{
+		float: right;
+		/*height:250px;*/
+		padding: 1em;
+	}
+	aside{
+		background-color: #E8E8E8;
+		width: 35%;
+	}
+	article{
+		background-color: #DDDDDD;
+		width: 65%;
+	}
+	article figure{
+		float: left;
+		width:100px;
+		margin: 8px;
+		clear:both;
+	}
+	article figure.right{
+		float:right;
+	}
+	footer{
+		background-color: grey;
+		color:white;
+		width:100%;
+	}
+
+	img{
+		width: 100%;
+	}
+	figcaption{
+		text-align: center;
+		color:#333;
+		text-decoration: underline;
+		font-style: italic;
+	}
+	figure{
+		box-shadow: 10px 10px 10px #C6C6C6;
+	}
+@media all and (max-width:700px){
+	aside,article{
+		width: 100%;
+	}
+	article figure{
+		width: 30%;
+	}
+}
+@media all and (max-width:500px){
+	article figure{
+		width: 100%;
+	}
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Document</title>
+		<style type="text/css">
+			ul{
+				list-style-type: none;
+			}
+			li{
+				width: 150px;
+				height: 25px;
+				border: 1px solid #000;
+				text-align: center;
+				line-height: 25px;
+				background-color: red;
+				position: relative;
+				float: left;
+			}
+			ul,li{
+				padding: 0px;
+				margin: 0px;
+			}
+			.menu{
+				height: 25px;
+			}
+			.menu>li{
+				/*float:left;*/
+				background-color: magenta;
+			}
+			.menu ul{
+				display: none;
+				position: absolute;
+				left:-1px;
+				left: 100%;
+				top: -1px;
+			}
+			.menu li:hover > ul{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="menu">
+			<li>Primi
+				<ul>
+					<li>Pasta</li>
+					<li>Riso</li>
+					<li>Zuppe</li>
+					<li>Specialità meditteranea
+						<ul>
+							<li>Pasta1</li>
+							<li>Riso1</li>
+							<li>Zuppe1</li>
+							<li>Specialità meditteranea1</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Secondi
+				<ul>
+					<li>Carne</li>
+					<li>Pesce</li>
+					<li>Vegetariani</li>
+				</ul>
+			</li>
+			<li>Dessert
+				<ul>
+					<li>Torte</li>
+					<li>Semifreddi</li>
+					<li>Gelati</li>
+					<li>Biscotti</li>
+				</ul>
+			</li>
+			<li>Piatti orientali
+				<ul>
+					<li>Cucina cinese</li>
+					<li>Cucina Tailandese</li>
+					<li>Sushi</li>
+					<li>Cucina indiana</li>
+				</ul>
+			</li>
+			<li>Cucina eschimese</li>
+		</ul>
+	</body>
+</html>

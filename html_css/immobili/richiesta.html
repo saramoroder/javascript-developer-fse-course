@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>indice</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="reset.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img src="img/casa.png" alt="logo"/>
+                <div>
+                    <h1>Immobits</h1>
+                    <h3>La tua agenzia immobiliare</h3>
+                </div>
+            </div>
+        </header>
+        
+
+        <nav class="main-nav">
+            <ul class="nav-container">
+                <li>
+                    <a  href="index.html">Home</a>
+                </li>
+                <li class="sottomenu">
+                    <a href="lista_a.html">Abitativo</a>
+                    <ul>
+                        <li><a href="lista_a_nuo.html">Nuovo</a></li>  
+                        <li><a href="lista_a_usa.html">Usato</a></li>
+                        <li><a href="lista_a_ven.html">Vendita</a></li>  
+                        <li><a href="lista_a_aff.html">Affitto</a></li>  
+                    </ul>
+                </li>
+                <li class="sottomenu">
+                    <a href="lista_c.html">Commerciale</a>
+                    <ul>
+                        <li><a href="lista_c_nuo.html">Nuovo</a></li>  
+                        <li><a href="lista_c_usa.html">Usato</a></li>  
+                        <li><a href="lista_c_ven.html">Vendita</a></li>  
+                        <li><a href="lista_c_aff.html">Affitto</a></li>
+                        <li><a href="lista_c_uff.html">Uffici</a></li>  
+                        <li><a href="lista_c_neg.html">Negozi</a></li>  
+                    </ul> 
+                </li>         
+            </ul>
+        </nav>
+
+
+        <nav class="breadcrumb">
+            <div class="breadcrumb-container">
+                <a href="index.html">Home</a>
+            </div>
+        </nav>
+    
+        
+        <section>
+            <fieldset>
+                <legend>Modulo di richiesta</legend>
+                <form action="index.html" method="get">
+                    <label for="nome">Nome</label>
+                    <div>
+                        <input type="text" id="nome" required="required" pattern="[a-zA-Z]+" />
+                    </div>
+
+                    <label for="cognome">Cognome</label>
+                    <div>
+                        <input type="text" id="cognome" required="required" pattern="[a-zA-Z]+" />
+                    </div>
+
+                    <label for="datanascita">Data di nascita gg/mm/aaaa</label>
+                    <div>
+                        <input type="date" id="datanascita" required="required" />
+                    </div>
+
+                    <label for="email">Email</label>
+                    <div>
+                        <input type="email" id="email" required="required"/>
+                    </div>
+
+                    <label for="messaggio" class="messaggio">Scrivi qui il tuo messaggio</label>
+                    <div>
+                        <textarea id="messaggio" rows="10" resize="none"></textarea>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, facilis, asperiores, non, incidunt ea corporis ab officia iusto libero illum placeat distinctio et quidem enim facere tempora suscipit dignissimos veritatis.</p>
+
+                    <label for="privacy" class="privacy">Accetto le condizioni della privacy</label>
+                    <div id="privacy-input-container">
+                        <input type="checkbox" id="privacy" name="form richiesta" value="accetto" checked="checked">
+                    </div>
+                    
+                    <br/>
+
+                    <div class="submit">
+                        <div>
+                            <input type="submit" value="Invia"/>
+                        </div>
+                        <div>
+                            <input type="reset" value="reset"/>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+        
+        <footer>
+            <div class="footer-container">
+                <aside class="sitemap">
+                    <ul>
+                        <li>
+                            <a  href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="lista_a.html">Abitativo</a>
+                            <ul>
+                                <li><a href="lista_a_ven.html">Vendita</a></li>  
+                                <li><a href="lista_a_aff.html">Affitto</a></li>  
+                                <li><a href="lista_a_nuo.html">Nuovo</a></li>  
+                                <li><a href="lista_a_usa.html">Usato</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="lista_c.html">Commerciale</a>
+                            <ul>
+                                <li><a href="lista_c_ven.html">Vendita</a></li>  
+                                <li><a href="lista_c_aff.html">Affitto</a></li>  
+                                <li><a href="lista_c_nuo.html">Nuovo</a></li>  
+                                <li><a href="lista_c_usa.html">Usato</a></li>  
+                            </ul> 
+                        </li>         
+                    </ul>
+                </aside>
+                <p class="to-top">
+                    <a href="#" class="">&uarr;</a>
+                </p>
+                <div>
+                    <p>Agenzia Immobits via Siemens  n. 42 C/D 39100 Bolzano</p>
+                    <p>Partita Iva 06663391661</p>
+                    <p>Copyright © 2010</p>
+                </div>
+            </div>
+        </footer> 
+    </body>
+</html>

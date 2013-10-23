@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Document</title>
+		<style>
+			div{
+				height: 100px;
+				width:  100px;
+				background-color: red;
+				border:5px solid black;
+			}
+			.absolute{
+				position:absolute;
+				top: 3em;
+				left: 3em;
+				background-color: green;
+			}
+			.relative{
+				position:relative;
+				background-color: magenta;
+			}
+			.fixed{
+				position:fixed;
+				top:3em;
+				right:3em;
+				background-color: yellow;
+			}
+			div:hover{
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div class="absolute"></div>
+		<div class="relative">
+			<div class="absolute"></div>
+		</div>
+		<!-- <div class="fixed"></div> -->
+		<div class="relative">
+			<div class="fixed"></div>
+		</div>
+		<div></div>
+
+		<dl>
+			<dt>absolute</dt>
+			<dd>green</dd>
+			<dt>relative</dt>
+			<dd>magenta</dd>
+			<dt>fixed</dt>
+			<dd>yellow</dd>
+			<dt>static</dt>
+			<dd>red</dd>
+		</dl>
+	</body>
+</html>

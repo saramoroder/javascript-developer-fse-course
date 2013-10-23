@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<form name="myform" id="myform" action="result.php" method="post" enctype="multipart/form-data">
+			<input type="text" id="nome" name="nome"/>
+			<br/>
+			<input type="password" id="password" name="password"/>
+			<br/>
+			<input type="radio" id="M" name="sex" value="m"/> M
+			<input type="radio" id="F" name="sex" value="f"/> F
+			<br/>
+			<input type="radio" name="eta" value="15"> et&agrave; &lt; 15
+			<input type="radio" name="eta" value="30"> et&agrave; &lt; 30
+			<input type="radio" name="eta" value="45"> et&agrave; &lt; 45
+			<br/>
+			<input type="checkbox" name="cane" id="cane" value="1" checked="checked">cane
+			<input type="checkbox" name="gatto" id="gatto" value="1">gatto
+			<input type="checkbox" name="koala" id="koala" value="1">koala
+			<input type="checkbox" name="canarino" id="canarino" value="1">canarino
+			<br/>
+			<input type="file" id="photo" name="photo">
+			<br/>
+			<textarea name="messaggio" id="messaggio" cols="40" rows="1">inserisci qui il tuo messaggio</textarea>
+			<br/>
+			<select name="city[]" id="city" multiple="multiple">
+				<option value="Bolzano">Bolzano</option>
+				<option value="Merano">Merano</option>
+				<option value="Belluno">Belluno</option>
+			</select>
+			<br/>
+			<input type="reset" name="reimposta">
+			<br/>
+			<input type="button" value="bottone" onclick="javascript:alert('ho fame!')"/>
+			<br/>
+			<input type="submit" id="invia" name="invia"/>
+		</form>
+	</body>
+</html>

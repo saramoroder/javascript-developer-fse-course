@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<form name="myform" id="myform" action="reg.php" method="get">
+			nome : <input type="text" name="nome" id="nome"/>
+			<br/>
+			cognome : <input type="text" name="cognome" id="cognome"/>
+			<br/>
+			data di nascita : <input type="text" name="birthdate" id="birthdate"/>
+			<br/>
+			cap : <input type="text" name="cap" id="cap"/>
+			<br/>
+			<select name="provincia" id="provincia">
+				<option value="bolzano">bolzano</option>
+				<option value="trento">trento</option>
+				<option value="udine">udine</option>
+			</select>
+			<br/>
+			Accetti la privacy? <input type="checkbox" name="privacy" id="privacy" value="yes" checked="checked">
+			<br/>
+			<input type="submit" id="invia" name="invia"/>
+			<input type="reset" id="reset" name="reset"/>
+		</form>
+	</body>
+</html>

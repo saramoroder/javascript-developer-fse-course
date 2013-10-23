@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Document</title>
+		<link type="text/css" rel="stylesheet" href="ecommerce.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1><img src="http://christian-fei.com/favicon.ico" alt="logo" class="logo"/><a href="ecommerce.html">Sito ecommerce</a></h1>
+				<nav>
+					<ul class="menu">
+						<li>ABBIGLIAMENTO
+							<ul>
+								<li><a href="tshirt.html" title="compra tshirt">t-shirt</a></li>
+								<li>cappelli</li>
+								<li>inverno</li>
+								<li>estate</li>
+							</ul>
+						</li>
+						<li>CASALINGHI
+							<ul>
+								<li><a href="http://arredamento.shop.ebay.it/" target="iframeebay">arredamento</a></li>
+								<li>menu2</li>
+								<li>menu3</li>
+								<li>menu4</li>
+							</ul>
+						</li>
+						<li>ELETTRONICA
+							<ul>
+								<li><a href="pc.html" title="compra pc">PC</a></li>
+								<li>TELEFONI</li>
+								<li>menu3</li>
+								<li>menu4</li>
+							</ul>
+						</li>
+						<li>CUCINA
+							<ul>
+								<li>PADELLE</li>
+								<li>BO</li>
+								<li>menu3</li>
+								<li>menu4</li>
+							</ul>
+						</li>
+						<li>admin
+							<ul>
+								<li><a href="fatturato.html">fatturato</a></li>
+								<li><a href="prodotti.html">prodotti</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<h2>con line singola</h2>
+				<p style="text-align:center">perchè non è permesso animare `points` del polyline</p>
+				<svg height="500" width="650" xmlns="http://www.w3.org/2000/svg">
+					<text x="40" y="340">150</text>
+					<line x1="50" x2="160" y1="350" y2="400" stroke-width="5" stroke="black"/>
+					<text x="140" y="370">100</text>
+					<line x1="160" x2="270" y1="400" y2="300" stroke-width="5" stroke="black">
+						<animate attributeType="XML" attributeName="y2" from="300" to="200" dur="2s" begin="250ms" fill="freeze" repeatCount="indefinite"/>
+					</line>
+					<text x="260" y="290">200
+						<animate attributeName="y" attributeType="XML" from="290" to="190" begin="250ms" dur="2s" fill="freeze" repeatCount="indefinite"/>
+					</text>
+					<line x1="270" x2="380" y1="300" y2="250" stroke-width="5" stroke="black">
+						<animate attributeType="XML" attributeName="y1" from="300" to="200" dur="2s" begin="250ms" fill="freeze" repeatCount="indefinite"/>
+					</line>
+					<text x="370" y="240">350</text>
+					<line x1="380" x2="490" y1="250" y2="350" stroke-width="5" stroke="black"/>
+					<text x="470" y="320">150</text>
+					<line x1="490" x2="600" y1="350" y2="50" stroke-width="5" stroke="black">
+						<animate attributeType="XML" attributeName="y2" from="50" to="200" dur="2s" begin="500ms" fill="freeze" repeatCount="indefinite"/>
+					</line>
+					<text x="590" y="40">550
+						<animate attributeName="y" attributeType="XML" from="40" to="190" begin="500ms" dur="2s" fill="freeze" repeatCount="indefinite"/>
+					</text>
+					<line x1="0" x2="650" y1="100" y2="100" stroke="grey" stroke-width="1"></line>
+					<line x1="0" x2="650" y1="200" y2="200" stroke="grey" stroke-width="1"></line>
+					<line x1="0" x2="650" y1="300" y2="300" stroke="grey" stroke-width="1"></line>
+					<line x1="0" x2="650" y1="400" y2="400" stroke="grey" stroke-width="1"></line>
+				</svg>
+				<br/>
+				<h2>con polyline</h2>
+				<svg height="500" width="650" xmlns="http://www.w3.org/2000/svg">
+					<polyline points="
+					50,350,
+					160,400,
+					270,300,
+					380,250,
+					490,350,
+					600,50" stroke="grey" stroke-width="5" fill="none"/>
+					<line x1="0" x2="650" y1="100" y2="100" stroke="grey" stroke-width="1"></line>
+					<line x1="0" x2="650" y1="200" y2="200" stroke="grey" stroke-width="1"></line>
+					<line x1="0" x2="650" y1="300" y2="300" stroke="grey" stroke-width="1"></line>
+					<line x1="0" x2="650" y1="400" y2="400" stroke="grey" stroke-width="1"></line>
+				</svg>
+			</section>
+		</div>
+	</body>
+</html>

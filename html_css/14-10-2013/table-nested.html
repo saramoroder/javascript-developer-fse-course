@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>table fixed</title>
+		<style type="text/css">
+			table,th,td{
+				border:1px solid #000;
+			}
+			table{
+				table-layout:fixed;
+			}
+			td,th{
+				max-width: 200px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			td table {
+				empty-cells: hide;
+			}
+			td table td{
+				width: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<table summary="test">
+			<caption>table with fixed layout</caption>
+			<tbody>
+				<tr>
+					<td>sdafdsfddfssfdsfddfdfdfdfsfdfddfdffd adipisicing elit. Fugiat,suscipit</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>hjhjhjhh df d fdf d fd fdfsf df </td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>
+						<table id="dentro">
+							<tr>
+								<td></td>
+								<td>rwewerwer</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>ffd f fd df df df</td>
+								<td>fd</td>
+								<td>sf d</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

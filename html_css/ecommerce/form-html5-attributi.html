@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Document</title>
+		<style type="text/css">
+			input:valid{
+				border:3px solid green;
+			}
+			input:invalid{
+				border:3px solid red;
+			}
+			form div{
+				float: left;
+				clear: both;
+			}
+			label{
+				float:left;
+				width: 100px;
+			}
+			input:focus{
+				border:3px solid deepskyblue;
+			}
+			label:after{
+				content:" *";
+				color:red;
+				font-size: .5em
+			}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend>
+				Example form
+			</legend>
+			<form name="myform" id="myform" action="result.php" method="get">
+				<div>
+					<label for="number">label</label>
+					<input type="number" name="number" id="number" required="required" tabindex="-1">
+				</div>
+				<div>
+					<label for="email">email</label> <input type="email" name="email" id="email" required="required" placeholder="indirizzo email">
+				</div>			
+				<div>
+					<input type="submit" name="invia" id="invia" value="submit"/>
+				</div>
+			</form>
+		</fieldset>
+	</body>
+</html>

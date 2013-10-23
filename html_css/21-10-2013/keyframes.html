@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			div{
+				height: 100px;
+				width:  100px;
+				border:1px solid black;
+				-webkit-animation: myanimation 2s linear infinite;
+				   -moz-animation: myanimation 2s linear infinite;
+				    -ms-animation: myanimation 2s linear infinite;
+				     -o-animation: myanimation 2s linear infinite;
+				-webkit-animation-direction: alternate;
+					-moz-animation-direction: alternate;
+					 -ms-animation-direction: alternate;
+					  -o-animation-direction: alternate;
+						  animation-direction: alternate;
+			}
+			@-webkit-keyframes myanimation {
+				0% { 
+					background-color:yellow;
+				}
+				100% { 
+					background-color: red;
+					-webkit-transform: rotate(360deg);
+					   -moz-transform: rotate(360deg);
+					    -ms-transform: rotate(360deg);
+					     -o-transform: rotate(360deg);
+					        transform: rotate(360deg);
+				}
+			}
+			@-moz-keyframes myanimation {
+				0% { 
+					background-color:yellow;
+				}
+				100% { 
+					background-color: red;
+					-webkit-transform: rotate(360deg);
+					   -moz-transform: rotate(360deg);
+					    -ms-transform: rotate(360deg);
+					     -o-transform: rotate(360deg);
+					        transform: rotate(360deg);
+				}
+			}
+			@-ms-keyframes myanimation {
+				0% { 
+					background-color:yellow;
+				}
+				100% { 
+					background-color: red;
+					-webkit-transform: rotate(360deg);
+					   -moz-transform: rotate(360deg);
+					    -ms-transform: rotate(360deg);
+					     -o-transform: rotate(360deg);
+					        transform: rotate(360deg);
+				}
+			}
+			@-o-keyframes myanimation {
+				0% { 
+					background-color:yellow;
+				}
+				100% { 
+					background-color: red;
+					-webkit-transform: rotate(360deg);
+					   -moz-transform: rotate(360deg);
+					    -ms-transform: rotate(360deg);
+					     -o-transform: rotate(360deg);
+					        transform: rotate(360deg);
+				}
+			}
+			@keyframes myanimation {
+				0% { 
+					background-color:yellow;
+				}
+				100% { 
+					background-color: red;
+					-webkit-transform: rotate(360deg);
+					   -moz-transform: rotate(360deg);
+					    -ms-transform: rotate(360deg);
+					     -o-transform: rotate(360deg);
+					        transform: rotate(360deg);
+				}
+			}
+		</style>
+		<link rel="stylesheet" href="keyframes.css"/>
+	</head>
+	<body>
+		<div>box</div>
+	</body>
+</html>

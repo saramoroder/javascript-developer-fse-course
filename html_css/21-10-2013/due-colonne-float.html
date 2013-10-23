@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Document</title>
+		<style type="text/css">
+			html,body{
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+			h1{
+				margin: 0;
+			}
+			#container{
+				position: relative;
+				/*border:1px solid black;*/
+				width:800px;
+				margin: auto;
+				/*will be read by stupid ass browsers*/
+				height: 100%;
+			}
+			/*will be read by intelligent browsers*/
+			body > #container{
+				height:auto;
+				min-height: 100%;
+			}
+			#header{
+				position: absolute;
+				background-color: blue;
+				height: 100px;
+				width: 100%;
+			}
+			#navigation{
+				position: absolute;
+				top:100px;
+				background-color: green;
+				width: 150px;
+			}
+			#content{
+				position: absolute;
+				top:100px;				
+				background-color: magenta;
+				padding-bottom: 75px;
+				left: 160px;
+			}
+			#footer{
+				background-color: yellow;
+				position:absolute;
+				clear: both;
+				bottom:0;
+				left: 0;
+				width: 800px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>Header</h1>
+			</div>
+			<div id="navigation">Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/>Menu1 <br/> Menu2 <br/> Menu3 <br/></div>
+			<div id="content">
+				<h2>Contenuto</h2>
+				<div>Sapiente, iure, placeat, odit, error numquam consequuntur labore cupiditate qui veniam debitis aliquam itaque? Nisi, totam, enim distinctio repudiandae fugit similique voluptates quae eligendi reiciendis corporis accusamus natus sapiente aut.</div>
+				<div>Ipsa, molestiae repellendus fuga suscipit totam tenetur sit animi placeat perspiciatis adipisci illo distinctio modi cum cumque culpa explicabo ipsum non unde debitis reprehenderit? Excepturi architecto beatae veniam quis quaerat.</div>
+				<div>Ipsa, molestiae repellendus fuga suscipit totam tenetur sit animi placeat perspiciatis adipisci illo distinctio modi cum cumque culpa explicabo ipsum non unde debitis reprehenderit? Excepturi architecto beatae veniam quis quaerat.</div>
+			</div>
+			<div id="footer">
+				Email me @ <a href="mailto:info@christian-fei.com">info@christian-fei.com</a>
+			</div>
+		</div>
+	</body>
+</html>

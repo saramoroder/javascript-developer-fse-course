@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <meta charset="utf-8">
+    <head>
+    <title>Form di richiesta</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+    </head>
+    
+    <body>
+        <div class="wrap">
+        <fieldset>
+        <legend>Modulo di richiesta</legend>
+            <form id="form richiesta" action="result.php" method="get">
+                <label for="nome" class="nome">Nome</label>
+                <input type="text" id="nome" name="form richiesta" required />&nbsp*
+                <br />
+                <br />
+                <br />
+                <label for="cognome" class="cognome">Cognome</label>
+                <input type="text" id="cognome" name="form richiesta"required />&nbsp*
+                <br />
+                <br />
+                <br />
+                <label for="datanascita" class="datanascita">Data di nascita gg/mm/aaaa </label>
+                <input type="text" id="datanascita" name="form richiesta"required />&nbsp*
+                <br />
+                <br />
+                <br />
+                <label for="imail" class="imail">Email</label>
+                <input type="email" id="imail" name="form richiesta" required/>&nbsp*
+                <br />
+                <br />
+                <br />
+                <label for="messaggio" class="messaggio">Scrivi qui il tuo messaggio</label>
+                <textarea  id="messaggio" name="form richiesta" rows="10"></textarea>
+                              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed 
+                    diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor 
+                    sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                    erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p> 
+                <br />
+                <input type="checkbox" id="privacy" name="form richiesta" value="1" checked="checked">
+                <label for="privacy" class="privacytext">Accetto le condizioni della privacy</label>
+            </form>
+        </fieldset>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			html,body{margin:0;padding:0;height:100%;}
+			#container{
+				position: relative;
+				height: 100%;
+				background-image: url('img/outerspace.jpg');
+			}
+			#missile{
+				position: absolute;
+				bottom:0;
+				left:  50px;
+				border: 1px solid white;
+			}
+			img{
+				height:150px;
+				-webkit-transition: -webkit-transform 5s;
+				-moz-transition: transform 5s;
+				-ms-transition: transform 5s;
+				-o-transition: transform 5s;
+				transition: transform 5s;
+			}
+			#missile:hover img{
+				-webkit-transform: translate(600px,-500px) rotate(45deg);
+				-moz-transform: translate(600px,-500px) rotate(45deg);
+				-ms-transform: translate(600px,-500px) rotate(45deg);
+				-o-transform: translate(600px,-500px) rotate(45deg);
+				transform: translate(600px,-500px) rotate(45deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="missile">
+				<img src="img/rocket.gif" alt="rocket"/>
+			</div>
+		</div>
+	</body>
+</html>

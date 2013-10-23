@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Document</title>
+		<style type="text/css">
+			header,nav{
+				margin: 0px auto;
+				width: 800px;
+			}
+			header{
+				background-color: red;
+				position: relative;
+			}
+			nav{
+				width: 800px;
+				background-color: yellow;
+				height: 20px;
+			}
+			#banner1,#banner2,#banner3{
+				width: 800px;
+				height: 150px;
+				background: green;
+			}
+			#banner1,#banner2,#banner3{
+			 	position:absolute;
+			 	top: 0px;
+			 	left: 0px;
+			}
+			#banner1{
+				position: relative;
+				z-index: 4;
+			}
+			#banner2{
+				z-index: 3;
+			}
+			#banner3{
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="banner1">banner1</div>
+			<div id="banner2">banner2</div>
+			<div id="banner3">banner3</div>
+		</header>
+		<nav></nav>
+	</body>
+</html>

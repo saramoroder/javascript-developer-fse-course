@@ -1,0 +1,230 @@
+@font-face{
+	font-family: mf;
+	src: url('fonts/sspr.otf') format('opentype');
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: mf;
+	margin-bottom: .5em;
+}
+body{
+	font-family: Arial,sans;
+}
+body > .header-wrapper,body > section, body > .footer-wrapper{
+	width: 950px;
+	margin:auto;
+}
+div.logo{
+	background-image: url('img/logo-big.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat:repeat-x;
+	background-repeat:no-repeat;
+	height:123px;
+	width: 700px;
+	margin:auto;
+}
+
+header ul{
+	list-style-type: none;
+	margin:auto;
+	width: 700px;
+	text-align: center;
+	overflow: hidden;
+}
+	header ul li{
+		display: inline-block;
+		width: 33.33%;
+		float: left;
+	}
+		header ul li a{
+			display: inline-block;
+			width: 99%;
+			padding: 1em 0;
+			border-right:1px solid #E5E5E5;
+		}
+		header ul li:last-child a{
+			border-right:none;
+		}
+
+
+body > header{
+	width: 100%;
+	background-color: #FFD969;
+}
+body > section{
+	margin-top:3em;
+	margin-bottom:3em;
+}
+body > section > div{
+	padding:1em;
+}
+
+footer{
+	background-color: #EEE;
+	line-height: 1.3;
+}
+.footer-wrapper{
+	text-align: center;
+	padding:1em;
+}
+
+
+
+
+/*chisiamo*/
+
+.chisiamo{
+	line-height:1.2;
+}
+.chisiamo figure{
+	margin: 2em 0;
+}
+img{
+	width: 100%;
+}
+figcaption{
+	text-align: center;
+	color:#3B3B3B;
+	margin-top: .3em;
+}
+.chisiamo > h1{
+	text-align: center;
+}
+h1{
+	font-size: 2.5em;
+}
+h3{
+	font-size: 2em;
+}
+/*elencolibri*/
+
+.libro{
+	position: relative;/*per il label 'nuovo'*/
+	display: block;
+	border-bottom: 1px solid #E3E3E3;
+	padding: 2em 1em;
+	-webkit-box-shadow: 8px 0 8px -8px #9A9A9A;
+	   -moz-box-shadow: 8px 0 8px -8px #9A9A9A;
+	        box-shadow: 8px 0 8px -8px #9A9A9A;
+}
+	.libro .nuovo{
+		position: absolute;
+		top:  -.8em;
+		left: -.4em;
+		background:#FC5700;
+		color:white;
+		padding:.3em;
+	}
+	/*il maledetto triangolo*/
+	.libro .nuovo:after{
+		content:' ';
+		height:1.6em;
+		width:1.6em;
+		position:absolute;
+		right:-0.8em;
+		top:0;
+		width: 0; 
+		height: 0; 
+		border-top: .84em solid transparent;
+		border-bottom: .84em solid transparent;
+
+		border-left: .84em solid #FC5700;
+	}
+.libro:nth-child(even){
+	background-color: #f8f8f8;
+}
+	.libro figure{
+		width:  200px;
+		float: left;
+		margin-right: 2.4em;
+		margin-bottom: 1em;
+	}
+	.libro .autore{
+		display: block;
+		text-align: right;
+		margin:.5em; 
+		font-style:italic;
+		font-size: 1.2em;
+	}
+	.libro .prezzo{
+		display: block;
+		text-align: right;
+		margin:.5em;
+		font-weight: bold;
+		font-size: 1.8em;
+	}
+	.libro:last-child{
+		border-bottom: none;
+	}
+	.libro .desc{
+		line-height: 1.3;
+		display: block;
+		text-align:justify;
+	}
+
+/*registrazione*/
+fieldset{
+	border: 2px solid #E1E1E1;
+	margin:auto;
+	padding:.5em;
+	width:500px;	
+}
+	legend{
+		margin-left:1em; 
+	}
+	label{
+		width: 150px;
+		display: inline-block;
+	}
+	label,input{
+		margin-left:2em; 
+	}
+	.center-input{
+		text-align: center;
+		margin-top: 1em;
+	}
+
+	form{
+		margin:auto;
+		width: 500px;
+	}
+
+
+
+@media screen and (min-width:800px) and (max-width:1000px){
+	body > .header-wrapper,body > section, body > .footer-wrapper{
+		width: 750px;
+		margin:auto;
+	}
+}
+@media screen and (max-width:800px){
+	header ul,body > header,body > section, body > footer{
+		width: 100%;
+	}
+	div.logo{
+		background-image: url('img/logo-small.png');
+		width: 100%;
+		height: 203px;
+		background-size: 90%;
+	}
+	form{
+		width: 100%;
+	}
+	input,label{
+		margin-left: .7em;
+		width:38%;
+	}
+}
+@media screen and (max-width:500px){
+	input,label{
+		margin-left: .7em;
+		width:85%;
+	}
+	fieldset{
+		width: 90%;
+	}
+	.libro figure{
+		width: 100%;
+		height:auto;
+	}
+}

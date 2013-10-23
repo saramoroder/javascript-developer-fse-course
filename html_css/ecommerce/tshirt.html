@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Document</title>
+		<link type="text/css" rel="stylesheet" href="ecommerce.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1><img src="http://christian-fei.com/favicon.ico" alt="logo" class="logo"/><a href="ecommerce.html">Sito ecommerce</a></h1>
+				<nav>
+					<ul class="menu">
+						<li>ABBIGLIAMENTO
+							<ul>
+								<li><a href="tshirt.html" title="compra tshirt">t-shirt</a></li>
+								<li>cappelli</li>
+								<li>inverno</li>
+								<li>estate</li>
+							</ul>
+						</li>
+						<li>CASALINGHI
+							<ul>
+								<li><a href="http://arredamento.shop.ebay.it/" target="iframeebay">arredamento</a></li>
+								<li>menu2</li>
+								<li>menu3</li>
+								<li>menu4</li>
+							</ul>
+						</li>
+						<li>ELETTRONICA
+							<ul>
+								<li><a href="pc.html" title="compra pc">PC</a></li>
+								<li>TELEFONI</li>
+								<li>menu3</li>
+								<li>menu4</li>
+							</ul>
+						</li>
+						<li>CUCINA
+							<ul>
+								<li>PADELLE</li>
+								<li>BO</li>
+								<li>menu3</li>
+								<li>menu4</li>
+							</ul>
+						</li>
+						<li>admin
+							<ul>
+								<li><a href="fatturato.html">fatturato</a></li>
+								<li><a href="prodotti.html">prodotti</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<form action="carrello.php" method="post" name="carrello" id="carrello">
+					<div class="img-container">
+						<img src="http://my780.com/wp-content/uploads/2013/03/tshirt-time-21510682.jpg" alt="tshirt"/>
+					</div>
+					<div>
+						<h1>T-Shirt</h1>
+					</div>
+					<div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, maiores blanditiis dignissimos veritatis quibusdam ab nulla modi nam facilis velit? Atque, tenetur reiciendis laborum id porro nostrum fuga minima officia.
+						</p>
+					</div>
+					<div>
+						<label for="taglia" class="required">taglia</label>
+						<select name="taglia" id="taglia" required="required">
+							<option value="">&nbsp;</option>
+							<option value="xs">XS</option>
+							<option value="s">S</option>
+							<option value="m">M</option>
+							<option value="l">L</option>
+							<option value="xl">XL</option>
+						</select>
+					</div>
+					<div>
+						<div class="color-container">
+							<div class="color blue">
+								<label for="color-blue" class="big"></label><input type="radio" checked="checked" name="color" id="color-blue" value="blue">
+							</div>
+							<div class="color red">
+								<label for="color-red" class="big"></label><input type="radio" name="color" id="color-red" value="red">
+							</div>
+							<div class="color green">
+								<label for="color-green" class="big"></label><input type="radio" name="color" id="color-green" value="green">
+							</div>
+						</div>
+					</div>
+					<div class="full">
+						<input type="submit" id="submit" name="submit" value="Aggiungi al carrello">
+						<input type="reset" id="reset" name="reset" value="ripristina carello">
+					</div>
+				</form>
+			</section>
+		</div>
+	</body>
+</html>

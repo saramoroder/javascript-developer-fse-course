@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Document</title>
+	</head>
+	<body>
+		<form name="myform" id="myform" action="result.php" method="get">
+			email: <input type="email" name="email" id="email"/><br/>
+			url: <input type="url" name="url" id="url"/><br/>
+			cap: <input type="number" name="cap" id="cap" min="0" max="50"/><br/>
+			range: 0 <input type="range" name="range" id="range" min="0" max="50"/> 50<br/>
+			date: <input type="date" name="date" id="date"/><br/>
+			month: <input type="month" name="month" id="month"/><br/>
+			week: <input type="week" name="week" id="week"/><br/>
+			color: <input type="color" name="color" id="color"/><br/>
+			search: <input type="search" name="search" id="search"/><br/>
+			tel: <input type="tel" name="tel" id="tel"/><br/>
+			Iscritti <input type="text" id="iscritti" name="iscritti" list="pippo">
+			<datalist id="pippo">
+				<option>Bolzano</option>
+				<option>Bressanone</option>
+				<option>Brunico</option>
+			</datalist>
+
+
+			<input type="submit" name="invia" id="invia" value="submit"/>
+		</form>
+	</body>
+</html>

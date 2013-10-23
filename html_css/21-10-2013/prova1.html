@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			html,body{margin: 0px;padding: 0px;height:100%;}
+			.container{
+				position: relative;
+				height:100%;
+				width: 100%;
+				background-color: #D4D4D4;
+				overflow:hidden;
+			}
+			.container > * {
+				position: absolute;
+			}
+			.circle{
+				border-radius:50%;
+				top:50%;
+				right:0;
+				width: 100%;
+				height: 100%;
+				border:10px solid black;
+			}
+			aside{
+				text-align: center;
+				background-color: #fff;
+				top:45%;
+				left:50%;
+				width:  4em;
+				height: 4em;
+				margin-left: -2em;
+				/*-webkit-animation-fill-mode: forwards;
+				-moz-animation-fill-mode: forwards;
+				-o-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;*/
+			}
+			aside:hover{
+				-webkit-animation: rot 4s ease;
+				   -moz-animation: rot 4s ease;
+				    -ms-animation: rot 4s ease;
+				     -o-animation: rot 4s ease;
+				        animation: rot 4s ease;
+			}
+			.ciao{
+				top: 69%;
+				left:10%;
+			}
+			.bau{
+				top: 69%;
+				left:auto;
+				right:10%;
+				margin-left:auto;
+				margin-right:-2em;
+			}
+			@-webkit-keyframes rot {
+				to{
+					border-radius: 50%;
+					-webkit-transform: rotate(1080deg) scale(1.5);
+					   -moz-transform: rotate(1080deg) scale(1.5);
+					    -ms-transform: rotate(1080deg) scale(1.5);
+					     -o-transform: rotate(1080deg) scale(1.5);
+					        transform: rotate(1080deg) scale(1.5);
+				}
+			}
+			@-moz-keyframes rot {
+				to{
+					border-radius: 50%;
+					-webkit-transform: rotate(1080deg) scale(1.5);
+					   -moz-transform: rotate(1080deg) scale(1.5);
+					    -ms-transform: rotate(1080deg) scale(1.5);
+					     -o-transform: rotate(1080deg) scale(1.5);
+					        transform: rotate(1080deg) scale(1.5);
+				}
+			}
+			@-ms-keyframes rot {
+				to{
+					border-radius: 50%;
+					-webkit-transform: rotate(1080deg) scale(1.5);
+					   -moz-transform: rotate(1080deg) scale(1.5);
+					    -ms-transform: rotate(1080deg) scale(1.5);
+					     -o-transform: rotate(1080deg) scale(1.5);
+					        transform: rotate(1080deg) scale(1.5);
+				}
+			}
+			@-o-keyframes rot {
+				to{
+					border-radius: 50%;
+					-webkit-transform: rotate(1080deg) scale(1.5);
+					   -moz-transform: rotate(1080deg) scale(1.5);
+					    -ms-transform: rotate(1080deg) scale(1.5);
+					     -o-transform: rotate(1080deg) scale(1.5);
+					        transform: rotate(1080deg) scale(1.5);
+				}
+			}
+			@keyframes rot {
+				to{
+					border-radius: 50%;
+					-webkit-transform: rotate(1080deg) scale(1.5);
+					   -moz-transform: rotate(1080deg) scale(1.5);
+					    -ms-transform: rotate(1080deg) scale(1.5);
+					     -o-transform: rotate(1080deg) scale(1.5);
+					        transform: rotate(1080deg) scale(1.5);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="circle"></div>
+			<aside class="ciao">ciao</aside>
+			<aside class="miao">miao</aside>
+			<aside class="bau">bau</aside>
+		</div>
+	</body>
+</html>

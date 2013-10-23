@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			body div{
+				color:red;
+			}
+			div > div{
+				color:blue;
+			}
+			div div > p{
+				color:yellow;
+			}
+			body > *:first-child{
+				background-color:black;
+			}
+		</style>
+	</head>
+	<body>
+		<p>primo paragrafo</p>
+		<div>
+			test <a href="http://mordor.com">div a</a>
+		</div>
+		<div>
+			<div>
+				<p>div div p</p>
+			</div>
+			<p>
+				<cite>div p cite</cite>
+			</p>
+		</div>
+		<p>
+			<cite>p cite</cite>
+		</p>
+	</body>
+</html>

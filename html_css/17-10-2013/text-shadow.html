@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Document</title>
+		<style>
+			.ts{
+				position: relative;
+				font-size: 45px;
+				/*font-family: monospace;*/
+				color:black;
+			}
+			.ts:after,.ts:before{
+				position: absolute;
+				content:attr(title);
+				color:#ccc;
+				top:2px;
+				left:2px;
+			}
+			.ts:before{
+				color:#333;
+				top:-2px;
+				left:-2px;
+				z-index: -1;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="ts" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, fuga pariatur culpa molestias et corrupti aperiam impedit ea? Magnam enim numquam quo molestiae dolorem a nemo eum expedita sunt dicta.">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, fuga pariatur culpa molestias et corrupti aperiam impedit ea? Magnam enim numquam quo molestiae dolorem a nemo eum expedita sunt dicta.
+		</p>
+	</body>
+</html>
